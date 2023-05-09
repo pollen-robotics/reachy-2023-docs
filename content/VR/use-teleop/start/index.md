@@ -23,33 +23,33 @@ toc: true
 
 2. Select the robot you want to teleoperate (or create a new one), and click on "Connect".
 
-3. When the robot is ready, click on "Click here to start", then **look straight ahead, with your body in the same orientation as your head while pressing A** to start the teleoperation. *The initial head position is used to determine the coordinate system giving your VR controllers position.* 
+3. Get familiar with the controls in the mirror room and the virtual robot. You may configure various settings here. When you are raedy press "Ready", and hold (A).
 
-{{< alert icon="👉" text="<b>Warning:</b> you <b>cannot move</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
+4. **Look straight ahead, with your body in the same orientation as your head while pressing A** to start the teleoperation. *The initial head position is used to determine the coordinate system giving your VR controllers position.* 
+
+{{< alert icon="👉" text="<b>Warning:</b> you <b>don't want to move your body</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
 
 {{< warning icon="🚨" text="<b>Important:</b> even if Reachy is bio-inspired, it cannot reproduce exactly all your movements. There are <b>positions that cannot be reached</b> by the robot. Please <b>avoid unusual movements</b> and do not persist in trying to reach a position if you see that the robot is stuck before it." >}}
 
-5. Come back any time to menu by **pressing A**. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place in menu.
+5. Come back any time to mirror room by **holding A**. Teleoperation of the robot is automatically paused if the headset is removed.
 
-{{< alert icon="👉" text="Please <b>stop teleoperation before removing your headset</b> (go back to menu or quit the app). If you do not, Reachy will continue following your controllers and headset orientation, and this can cause damages to the robot." >}}
+{{< alert icon="👉" text="Please <b>stop teleoperation before removing your headset</b> (go back to mirror room or quit the app). If you do not, Reachy will continue following your controllers and headset orientation, and this can cause damages to the robot." >}}
 
 ### Stop teleoperation
 
-1. Come back to the **menu** to pause the teleoperation by **pressing A** at any time during teleoperation.  
+1. Come back to the **mirror room** to pause the teleoperation by **holding A** at any time during teleoperation.  
 
-2. Leave the app by clicking "**Quit**" in the menu and continue with "Yes, leave.".  
+2. Leave the app by clicking "**Quit**" icons in the mirror room and connection menu. 
 
-The motors are automatically turned into compliant mode when not teleoperated. Please make sure the arms are close enough to the lowest position they can reach when coming back to the menu to avoid them falling or hitting something.  
+The motors are automatically turned into compliant mode when quitting the mirror room. Please make sure the arms are close enough to the lowest position they can reach when coming back to the menu to avoid them falling or hitting something.  
 
 
 ## Step-by-step starting
-1. Prepare your VR equipment to be VR ready: turn on all VR device, make sure they are correctly detected by SteamVR.  
-  *For Oculus Quest users:*
-  You need to launch the Oculus application before starting the teleoperation application.  
+1. Make sure that your VR equipement is up and running. Please refer to your device documentation.
 
 2. Make sure the robot is turned on, connected to the network and that all the robot services are running. *By default, if you haven't modified anything, all services should be automatically launched on start of the **full/starter kit** robots.*
 
-3. Launch the application .exe file
+3. Launch the application *TeleoperateReachy.exe* file if you are using a VR device connected to a Windows computer. For Oculus Quest users, start the app from within the headset if you have installed the *.apk*.
 
 4. Equip yourself with your headset, make sure you can see both controllers and that the scene is moving correctly in accordance with your head movements.
 
@@ -62,20 +62,21 @@ The motors are automatically turned into compliant mode when not teleoperated. P
 
 {{< img alt="Connect to a robot" src="connect.png" width="600px" >}}
 
-7. Make sure the connection status in the top right of the menu is indicating "You are connected to a remote Reachy".
+7. You should be now in the mirror room, and see yourself controlling a virtual reachy. The actual robot is not in control at that time but the live camera stream is displayed at the top right of the mirror. The info, help and settings menus are available here (they are documented in the next section). Please get familiar with the robot controls and features (emotion, grasping lock).
 
-8. When Reachy is ready, click on "Click here to start".
+{{< img alt="Mirror scene" src="mirror.png" width="600px" >}}
 
-{{< img alt="Start teleoperation" src="click-here-to-start.png" width="600px" >}}
+8. When you are ready, click on "Ready". The position of the actual robot appears in a semi-transparent green color. This may be useful when you've left the robot in a certain position that you would like to keep when entering the teleoperation. Hold (A) to start the teleoperation.
 
-9. Choose the place you want to teleoperate Reachy from, position your hand in the posture you want to begin with. C
-**Look straight ahead, with your body in the same orientation as your head while pressing A.** The initial head position is used to determine the coordinate system giving your VR controllers position.  
+{{< img alt="Start teleoperation" src="mirror-ready.png" width="600px" >}}
 
-{{< img alt="Validate position before starting" src="ready-to-start.png" width="600px" >}}
+9. A 3 seconds timer appears while you enter the teleoperation. **Look straight ahead, with your body in the same orientation as your head.** The initial head position is used to determine the coordinate system giving your VR controllers position.  
 
-{{< alert icon="👉" text="<b>Warning:</b> you <b>cannot move</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
+{{< img alt="Validate position before starting" src="timer-start.png" width="600px" >}}
 
-10. Come back any time to menu by **pressing A**. Teleoperation of the robot is automatically paused if the menu is open. You can move to another place until you validate a position.
+{{< alert icon="👉" text="<b>Warning:</b> you <b>don't want to move your torso and body</b> anymore after this step. Only your head and arms. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
+
+10. Come back any time to menu by **pressing A**. Teleoperation of the robot is automatically paused if the headset is removed.
 
 
 ## Application features
@@ -111,25 +112,39 @@ Validate the deletion:
 {{% expand "> Check the gRPC ports"%}}
 Click on "Ports information" in the connection menu, below the Connect button.
 {{< img alt="Connect page" src="connect-page.png" width="600px" >}}
-Find there the info of all the gRPC ports used. You can also modify then if you made changed on your robot:
+Find there the info of all the gRPC ports used. You can also modify them if you made changes on your robot:
 {{< img alt="Check ports information" src="port-info.png" width="600px" >}}
 {{% /expand %}}
 
-{{% expand "> Disable the automatic best practice display"%}}
-Disable the "Always show on start" toggle at the bottom of the best practice page:
-{{< img alt="Disable automatic best practice" src="best-practice.png" width="600px" >}}
+{{% expand "> Check robot status"%}}
+Open the info menu in the mirror room:
+{{< img alt="Info menu" src="mirror-info.png" width="600px" >}}
+The connection and services status, and motor temperature are reported here.
 {{% /expand %}}
 
-{{% expand "> Refer back to the best practice"%}}
-Click on the guide at the top right of the menu:
-{{< img alt="Access best practice" src="guide-button.png" width="600px" >}}
+{{% expand "> Controller mapping"%}}
+Open the help menu in the mirror room:
+{{< img alt="Info menu" src="mirror-help.png" width="600px" >}}
+The mapping of the controller buttons to the robot actions are displayed here.
 {{% /expand %}}
 
-{{% expand "> Disable the use of mobility"%}}
-Go to the help menu:
-{{< img alt="Access best practice" src="help-menu.png" width="600px" >}}
-Switch mobility to off on the button located at the bottom left  
-{{< img alt="Mobility button" src="mobility-button.png" width="600px" >}}
+{{% expand "> Settings menu"%}}
+Open the settings menu in the mirror room:
+{{< img alt="Settings menu" src="mirror-settings.png" width="600px" >}}
+Here you can set your size to improve the mapping between your movements and reachy's motion. Individual parts of the robot can be deactivated in the case you don't need the mobile base, a specific arm, etc. The 3D mode can be activated here. Note that you'll need a recent (1.2+) version of Reachy for that. Finally the grasping lock mode can be turn on/off here as it can be in the online menu.
+{{% /expand %}}
+
+{{% expand "> Online menu"%}}
+Press (X) when controlling a (virtual) Reachy to open the online menu. Use the right joystick to select and icon and release (X).
+{{< img alt="Online menu" src="online-menu.png" width="600px" >}}
+Emotion (movement of antennas) are triggered here. The grasping lock can be also activated from this menu.
+{{% /expand %}}
+
+
+{{% expand "> Exit and lock position"%}}
+While press (A) to exit the teleoperation, you may hold (X) to activate the position lock. A lock is displayed when doing so.
+{{< img alt="Exit and lock" src="exit-lock.png" width="600px" >}}
+The robot will stayed locked while you'll be back in the mirror room. This can be useful to keep a certain position while you need to take a break, change position or remove the headset. The position of the robot will be displayed by the semi-transparent green robot when you will restart the teleoperation.
 {{% /expand %}}
 
 {{< my-button link="/vr/use-teleop/old-start/" label="See legacy version" >}}

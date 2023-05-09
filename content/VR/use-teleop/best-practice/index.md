@@ -14,7 +14,7 @@ toc: true
 
 {{< warning icon="👉🏾" text="This page contains really important information about the use of the teleoperation app. <b>Please make sure you read it carefully before teleoperating Reachy.</b>" >}}
 
-The teleoperation application use has nothing complicated, but you need to respect a few guidelines to avoid damaging the robot when using it. This page goes through the main elements you need to keep in mind while teleoperating Reachy. The guidelines are not exhaustive, but should give you a good start on how to use the application safely.
+Using teleoperation application has nothing complicated, but you need to respect a few guidelines to avoid damaging the robot when using it. This page goes through the main elements you need to keep in mind while teleoperating Reachy. The guidelines are not exhaustive, but should give you a good start on how to safely use the application.
 
 ## Ideal use of teleoperation
 
@@ -25,7 +25,7 @@ The ideal position to start teleoperation may depend on the surrounding of Reach
 
 <br />
 <br />
-Here is a video of movements and positions that are visually suitable for teleoperation:
+Here is a video of movements and positions that are suitable for teleoperation:
 <br />
 <br />
 
@@ -41,14 +41,13 @@ Follow all the elements described in the next sections to teleoperate Reachy in 
 ## All guidelines in video
 Watch this quick video to have an overview of the main guidelines to use teleoperation:  
 
-{{< youtube bK7th6zY8Rg >}}  
+{{< youtube bK7th6zY8Rg >}}
 
 <br />
 The next sections go deeper into each guideline presented in the video and the risks of not following them.
 
 ## Keep the right position 
-The mapping between your position and the robot is made when clicking on (A) to start teleoperation. The position and rotation of your headset <b>at this moment</b> is used to create a static coordinate system in which the controllers positions and rotations and the headset rotation are calculated. If you move (change either your body position or orientation), the controllers positions will still be calculated in the previous static coordinate system, and Reachy movements won't look like like yours anymore.  
-For these reasons, you must:
+The mapping between your position and the robot is made when holding (A) to start teleoperation. The position and rotation of your headset <b>at this moment</b> are used to calibrate the system. If you move (i.e. change either your body position or orientation), the controllers positions will still be calculated in this coordinate system, and Reachy movements won't look like like yours anymore.  For these reasons, you must:
 
 - <b>Not move your feet</b> when teleoperating Reachy: they must stay static on the floor.
 
@@ -124,7 +123,7 @@ All this contribute to give movements that seem incontrollable, due to discontin
 
 
 ## Avoid damaging motors
-Reachy's arms have been thought to manipulate object at a table level and nearby.
+Reachy's arms have been designed to manipulate objects at a table level and nearby.
 Some positions away from this nominal area can require a lot of effort from the motors to be maintained, and cause them to overheat fast. Moreover, manipulating objects requires more effort from the motors.
 
 **To avoid damaging motors:**
@@ -160,7 +159,7 @@ Some positions away from this nominal area can require a lot of effort from the 
 </video>
 
 ## Avoid damaging 3D parts
-Hitting Reachy's arms on objects can damage the painting or even break 3D parts of the robot. It may happen even if the arms crash into something at moderate speed.
+Hitting Reachy's arms on objects can break 3D parts of the robot. It may happen even if the arms crash into something at moderate speed.
 
 **To avoid damaging 3D parts:**
 - Check the environment surrounding the robot before starting the teleoperation. Make sure you have enough space around the robot and that there is no object to be hit by the robot (this may also save your object from being broken...)
@@ -206,7 +205,7 @@ Hitting Reachy's arms on objects can damage the painting or even break 3D parts 
   <p>Your browser does not support the video element.</p>
 </video>
 
-- Stop teleoperation before removing your headset! You must be back in the menu before dropping the controllers and removing your headset, because Reachy will continue following your movements until you stopped it.
+- Stop teleoperation before removing your headset! You must be back in the menu before dropping the controllers and removing your headset, because Reachy will continue following your movements until you stop it.
 
 <video controls="controls" width="40%" loop>
   <source type="video/mp4" src="RemoveHeadsetOk.mp4"></source>
@@ -221,9 +220,9 @@ Hitting Reachy's arms on objects can damage the painting or even break 3D parts 
 </video>
 
 ## Familiarize yourself with the robot
-- Before trying to make application or to achieve anything using teleoperation with the robot, familiarize yourself with its movements, its workspace and its joints limits.
+- Before teleoperating the actual robot, familiarize yourself with its movements, its workspace and its joints limits. The virtual robot in the mirror scene is a good opportunity for that.
 - Stay near the robot for your first trials: listen to the motors sounds, be aware of your workspace and field of view in a environment you know, try to manipulate light objects.
 - Explore your own workspace with small and quite slow movements to see how the robot reacts and better understand the relation between your movements and its.
 
 
-{{< alert icon="💡" text="You may feel like being in a video game at some point, but never forget your movements are reproduced in real life!" >}}
+{{< alert icon="💡" text="You may feel like being in a video game at some point, but never forget that your movements are reproduced in real life!" >}}

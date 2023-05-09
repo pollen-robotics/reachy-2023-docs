@@ -13,7 +13,9 @@ weight: 610
 toc: true
 ---
 
-In order to use the teleoperation application, your PC needs to support Virtual Reality and SteamVR. It is required for the computer to run on Windows, to be powerful enough and equipped with a graphic card.  
+The application is built on Unity 2020.3 LTS for which the requirements can be found [here](https://docs.unity3d.com/2020.3/Documentation/Manual/system-requirements.html).
+
+In order to use the desktop version of the teleoperation application, your PC needs to support Virtual Reality. We recommend the computer to run on Windows, to be powerful enough and equipped with a graphic card.  
 
 The computer minimum requirements are the following:  
 * **Operating System:** Windows 10 (or Windows 7 SP1)
@@ -21,3 +23,5 @@ The computer minimum requirements are the following:
 * **Memory:** 8GB RAM
 * **Graphic card:** NVIDIA GeForce GTX 970, AMD Radeon R9 290 equivalent or better
 * **Network:** Broadband Internet connection. It is highly recommended for your PC to be **hard-wired** into your router using an **ethernet cable**.
+
+Note that the app can run natively on a **Oculus Quest 2**. In that case a computer is not required.

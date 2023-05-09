@@ -25,6 +25,6 @@ Set a static IP address to your robot and use the redirection address on the VR 
 ## Make sure the robot is ready
 For the application to connect to be able to connect to the robot make sure:
 * the robot is turned on
-* the robot is connected to the network. We advise the robot to be **hard-wired** using an ethernet cable.
+* the robot is connected to the network. We advise the robot to be **hard-wired** using an ethernet cable if the mobile base is not used.
 * all robot services are launched.  
 *By default, all required services are launched automatically when you turn the robot on for **full/starter kits**. For more information, check the [available system services]({{< ref "advanced/services/available" >}}).* 
