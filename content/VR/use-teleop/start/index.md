@@ -85,36 +85,35 @@ The motors are automatically turned into compliant mode when quitting the mirror
 Click on the robot to select to open the panel of all saved robots:
 {{< img-resize "images/VR/choose-robot.png" 600x "Change robot to connect">}}
 Then click on "Add new robot +" at the bottom right of the page:
-{{< img alt="Add robot button" src="add-robot-button.png" width="600px" >}}
+{{< img-resize "images/VR/add-robot-button.png" 600x "Add robot button">}}
 Enter a robot name and the IP address of the robot (if the headset is connected on a computer, use the computer keyboard), and save your robot card:  
 *The IP address is mandatory. If no name is given to the new robot, it will be called @Reachy by default*
-{{< img alt="Add robot panel" src="add-robot-card.png" width="600px" >}}
+{{< img-resize "images/VR/add-robot-card.png" 600x "Add robot panel">}}
 {{% /expand %}}
 
 {{% expand "> Modify an existing robot"%}}
 Click on the robot to select to open the panel of all saved robots:
 {{< img-resize "images/VR/choose-robot.png" 600x "Change robot to connect">}}
 Then click on the pencil icon of the robot you want to modify:
-{{< img alt="Modify robot button" src="modify-robot-button.png" width="600px" >}}
+{{< img-resize "images/VR/modify-robot-button.png" 600x "Modify robot button">}}
 Modify the info on the robot card and save the card:
-{{< img alt="Modify robot panel" src="modify-robot-panel.png" width="600px" >}}
+{{< img-resize "images/VR/modify-robot-panel.png" 600x "Modify robot panel">}}
 {{% /expand %}}
 
 {{% expand "> Delete a saved robot"%}}
 Click on the robot to select to open the panel of all saved robots:
 {{< img-resize "images/VR/choose-robot.png" 600x "Change robot to connect">}}
 Then click on the bin icon of the robot you want to delete:
-{{< img alt="Delete robot button" src="delete-robot-button.png" width="600px" >}}
+{{< img-resize "images/VR/delete-robot-button.png" 600x "Delete robot button">}}
 Validate the deletion:
-{{< img alt="Delete robot panel" src="delete-robot-panel.png" width="600px" >}}
+{{< img-resize "images/VR/delete-robot-panel.png" 600x "Delete robot panel">}}
 {{% /expand %}}
 
 {{% expand "> Check the gRPC ports"%}}
 Click on "Ports information" in the connection menu, below the Connect button.
 {{< img-resize "images/VR/connect-page.png" 600x "Connect page">}}
 Find there the info of all the gRPC ports used. You can also modify them if you made changes on your robot:
-{{< img alt="Check ports information" src="port-info.png" width="600px" >}}
-{{< img-resize "images/VR/mirror-ready.png" 600x "Start teleoperation">}}
+{{< img-resize "images/VR/port-info.png" 600x "Check ports information">}}
 {{% /expand %}}
 
 {{% expand "> Check robot status"%}}
@@ -140,7 +139,6 @@ Press (X) when controlling a (virtual) Reachy to open the online menu. Use the r
 {{< img-resize "images/VR/online-menu.png" 600x "Online menu">}}
 Emotion (movement of antennas) are triggered here. The grasping lock can be also activated from this menu.
 {{% /expand %}}
-
 
 {{% expand "> Exit and lock position"%}}
 While press (A) to exit the teleoperation, you may hold (X) to activate the position lock. A lock is displayed when doing so.

@@ -20,8 +20,8 @@ Using teleoperation application has nothing complicated, but you need to respect
 
 The ideal position to start teleoperation may depend on the surrounding of Reachy. Nevertheless, if the robot environment is compatible with it, we advise to start with the elbows at 90 degrees, lightly away from the torso.
 
-<img src="idealPosFaceReduced.jpg" alt="ideal position face" width="40%"/>
-<img src="idealPosProfReduced.jpg" alt="ideal position side" width="40%"/>
+{{< img-resize "images/VR/idealPosFaceReduced.jpg" 300x "ideal position face">}}
+{{< img-resize "images/VR/idealPosProfReduced.jpg" 300x "ideal position side">}}
 
 <br />
 <br />
