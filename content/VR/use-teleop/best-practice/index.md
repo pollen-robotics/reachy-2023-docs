@@ -29,11 +29,7 @@ Here is a video of movements and positions that are suitable for teleoperation:
 <br />
 <br />
 
-<video controls="controls" width="80%" autoplay loop>
-  <source type="video/mp4" src="ChestOk.mp4"></source>
-  <source type="video/webm" src="ChestOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/ChestOk.mp4" "80%" >}}
 
 <br />
 Follow all the elements described in the next sections to teleoperate Reachy in the best conditions! 
@@ -51,34 +47,17 @@ The mapping between your position and the robot is made when holding (A) to star
 
 - <b>Not move your feet</b> when teleoperating Reachy: they must stay static on the floor.
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="FeetOk.mp4"></source>
-  <source type="video/webm" src="FeetOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/FeetOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="FeetNotOk.mp4"></source>
-  <source type="video/webm" src="FeetNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>  
+{{< video "videos/VR/FeetNotOk.mp4" "40%" >}}
+
 
 - <b>Not rotate your torso</b>.
 In fact, Reachy's torso won't move, only the arms will try to reach the positions, and this may lead to collision between the Reachy's arms and torso.
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="ChestOk.mp4"></source>
-  <source type="video/webm" src="ChestOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/ChestOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="ChestNotOk.mp4"></source>
-  <source type="video/webm" src="ChestNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
-
-
+{{< video "videos/VR/ChestNotOk.mp4" "40%" >}}
 
 ## Avoid movements discontinuities
 Reachy doesn't have the exact same degrees of freedom as you have, neither the same range for each joints. When a position cannot be reached, either because of the position or the orientation, the inverse kinematics gives the closest arm configuration found. The closest configuration found for the next position may be:
@@ -93,31 +72,15 @@ All this contribute to give movements that seem incontrollable, due to discontin
 - Avoid using extreme joints orientations while teleoperating Reachy
 - Avoid unusual arm positions, there are probably above Reachy's joints limits
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="MovementsOk.mp4"></source>
-  <source type="video/webm" src="MovementsOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/MovementsOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="MovementsNotOk.mp4"></source>
-  <source type="video/webm" src="MovementsNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/MovementsNotOk.mp4" "40%" >}}
 
 - The most limiting joint is the elbow: avoid working to close to your chest, the elbow will be at the limit of its range of motion
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="TorsoArmOk.mp4"></source>
-  <source type="video/webm" src="TorsoArmOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/TorsoArmOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="TorsoArmNotOk.mp4"></source>
-  <source type="video/webm" src="TorsoArmNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/TorsoArmNotOk.mp4" "40%" >}}
 
 - If the robot seems to stop following your movements, do not continue to move in this direction, you have already reached its workspace limit. Go back to a position you know can be reached.
 
@@ -131,32 +94,16 @@ Some positions away from this nominal area can require a lot of effort from the 
 - Avoid doing movements above your head
 - Avoid keeping your arms straight ahead horizontally to the floor, where the shoulders motors have to carry all the weight of the arms in a static position
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="AboveHeadOk.mp4"></source>
-  <source type="video/webm" src="AboveHeadOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/AboveHeadOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="AboveHeadNotOk.mp4"></source>
-  <source type="video/webm" src="AboveHeadNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/AboveHeadNotOk.mp4" "40%" >}}
 
 - Do not let the motors in stiff mode when you are in the menu if you are not going to teleoperate the robot soon
 - Do not try to lift objects that are above Reachy's capabilities. If you try to lift an object and see that Reachy's arm can follow your movement or if you head some crackling noise coming from the motors, it probably means that the object is too heavy for Reachy's arm.
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="WeightOk.mp4"></source>
-  <source type="video/webm" src="WeightOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/WeightOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="WeightNotOk.mp4"></source>
-  <source type="video/webm" src="WeightNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/WeightNotOk.mp4" "40%" >}}
 
 ## Avoid damaging 3D parts
 Hitting Reachy's arms on objects can break 3D parts of the robot. It may happen even if the arms crash into something at moderate speed.
@@ -164,60 +111,29 @@ Hitting Reachy's arms on objects can break 3D parts of the robot. It may happen 
 **To avoid damaging 3D parts:**
 - Check the environment surrounding the robot before starting the teleoperation. Make sure you have enough space around the robot and that there is no object to be hit by the robot (this may also save your object from being broken...)
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="CheckSpaceRobotOk.mp4"></source>
-  <source type="video/webm" src="CheckSpaceRobotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/CheckSpaceRobotOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="CheckSpaceRobotNotOk.mp4"></source>
-  <source type="video/webm" src="CheckSpaceRobotNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/CheckSpaceRobotNotOk.mp4" "40%" >}}
 
 - Stop teleoperation close to the position which will be reached when the motors will be compliant, so that the arms won't fall from high.
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="StopArmOk.mp4"></source>
-  <source type="video/webm" src="StopArmOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/StopArmOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="StopArmNotOk.mp4"></source>
-  <source type="video/webm" src="StopArmNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/StopArmNotOk.mp4" "40%" >}}
 
 ## Use teleop safely
 - Check the environment around you before starting teleoperation.
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="CheckSpaceOk.mp4"></source>
-  <source type="video/webm" src="CheckSpaceOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/CheckSpaceOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="CheckSpaceNotOk.mp4"></source>
-  <source type="video/webm" src="CheckSpaceNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/CheckSpaceNotOk.mp4" "40%" >}}
 
 - Stop teleoperation before removing your headset! You must be back in the menu before dropping the controllers and removing your headset, because Reachy will continue following your movements until you stop it.
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="RemoveHeadsetOk.mp4"></source>
-  <source type="video/webm" src="RemoveHeadsetOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/RemoveHeadsetOk.mp4" "40%" >}}
 
-<video controls="controls" width="40%" loop>
-  <source type="video/mp4" src="RemoveHeadsetNotOk.mp4"></source>
-  <source type="video/webm" src="RemoveHeadsetNotOk.webm"></source>
-  <p>Your browser does not support the video element.</p>
-</video>
+{{< video "videos/VR/RemoveHeadsetNotOk.mp4" "40%" >}}
+
 
 ## Familiarize yourself with the robot
 - Before teleoperating the actual robot, familiarize yourself with its movements, its workspace and its joints limits. The virtual robot in the mirror scene is a good opportunity for that.
