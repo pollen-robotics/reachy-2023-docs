@@ -15,8 +15,10 @@ toc: true
 
 ## Check the info on the app!
 Access the help menu to get more information on the connection status and the status of the robot.
-{{< img alt="Help menu button" src="help-menu.png" width="600px" >}}
-{{< img alt="Help menu" src="check-state.png" width="600px" >}}
+
+{{< img-resize "images/VR/mirror-info.png" 600x "Mirror Info">}}
+
+{{< img-resize "images/VR/check-state.png" 600x "Check State">}}
 
 The connection status give you information about the communication with the robot. Existing connection status are the following:
 * **Connected to a remote Reachy** *(green)*: everything seems to be working fine
@@ -71,6 +73,6 @@ Several elements can make the mobile base unreactive to your inputs.
 * The configuration of your robot does not declare a mobile base, therefore the teleoperation application does not provide any mobility service. Check if a mobile base is expected in the Robot detected configuration section.
 |Mobile base is declared and mobility services are available|No mobile base is declared|
 |----------------------|------------------------------|
-|{{< img alt="Mobile base services on" src="mobile-base.png" width="600px" >}}|{{< img alt="No mobile base" src="check-state.png" width="600px" >}}|
+|{{< img-resize "images/VR/mobile-base.png" 300x>}}|{{< img-resize "images/VR/check-state.png" 300x>}}
 
 {{< my-button link="/vr/problem/old-debug/" label="See legacy debug section" >}}

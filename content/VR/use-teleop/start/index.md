@@ -55,24 +55,24 @@ The motors are automatically turned into compliant mode when quitting the mirror
 
 5. Choose the robot you want to connect to: you can select a robot with its IP address, or add a new one to the list of available robots.
 
-{{< img alt="Change robot to connect" src="choose-robot.png" width="600px" >}}
-{{< img alt="Select robot to connect" src="select-robot.png" width="600px" >}}
+{{< img-resize "images/VR/choose-robot.png" 600x "Change robot to connect">}}
+{{< img-resize "images/VR/select-robot.png" 600x "Select robot to connect">}}
 
 6. Press *Connect* to initiate the communication with the robot.
 
-{{< img alt="Connect to a robot" src="connect.png" width="600px" >}}
+{{< img-resize "images/VR/connect.png" 600x "Connect to a robot">}}
 
 7. You should be now in the mirror room, and see yourself controlling a virtual reachy. The actual robot is not in control at that time but the live camera stream is displayed at the top right of the mirror. The info, help and settings menus are available here (they are documented in the next section). Please get familiar with the robot controls and features (emotion, grasping lock).
 
-{{< img alt="Mirror scene" src="mirror.png" width="600px" >}}
+{{< img-resize "images/VR/mirror.png" 600x "Mirror scene">}}
 
 8. When you are ready, click on "Ready". The position of the actual robot appears in a semi-transparent green color. This may be useful when you've left the robot in a certain position that you would like to keep when entering the teleoperation. Hold (A) to start the teleoperation.
 
-{{< img alt="Start teleoperation" src="mirror-ready.png" width="600px" >}}
+{{< img-resize "images/VR/mirror-ready.png" 600x "Start teleoperation">}}
 
 9. A 3 seconds timer appears while you enter the teleoperation. **Look straight ahead, with your body in the same orientation as your head.** The initial head position is used to determine the coordinate system giving your VR controllers position.  
 
-{{< img alt="Validate position before starting" src="timer-start.png" width="600px" >}}
+{{< img-resize "images/VR/timer-start.png" 600x "Validate position before starting">}}
 
 {{< alert icon="👉" text="<b>Warning:</b> you <b>don't want to move your torso and body</b> anymore after this step. Only your head and arms. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
 
@@ -83,7 +83,7 @@ The motors are automatically turned into compliant mode when quitting the mirror
 
 {{% expand "> Add a new robot" %}}
 Click on the robot to select to open the panel of all saved robots:
-{{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
+{{< img-resize "images/VR/choose-robot.png" 600x "Change robot to connect">}}
 Then click on "Add new robot +" at the bottom right of the page:
 {{< img alt="Add robot button" src="add-robot-button.png" width="600px" >}}
 Enter a robot name and the IP address of the robot (if the headset is connected on a computer, use the computer keyboard), and save your robot card:  
@@ -93,7 +93,7 @@ Enter a robot name and the IP address of the robot (if the headset is connected 
 
 {{% expand "> Modify an existing robot"%}}
 Click on the robot to select to open the panel of all saved robots:
-{{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
+{{< img-resize "images/VR/choose-robot.png" 600x "Change robot to connect">}}
 Then click on the pencil icon of the robot you want to modify:
 {{< img alt="Modify robot button" src="modify-robot-button.png" width="600px" >}}
 Modify the info on the robot card and save the card:
@@ -102,7 +102,7 @@ Modify the info on the robot card and save the card:
 
 {{% expand "> Delete a saved robot"%}}
 Click on the robot to select to open the panel of all saved robots:
-{{< img alt="Select robot" src="choose-robot.png" width="600px" >}}
+{{< img-resize "images/VR/choose-robot.png" 600x "Change robot to connect">}}
 Then click on the bin icon of the robot you want to delete:
 {{< img alt="Delete robot button" src="delete-robot-button.png" width="600px" >}}
 Validate the deletion:
@@ -111,40 +111,39 @@ Validate the deletion:
 
 {{% expand "> Check the gRPC ports"%}}
 Click on "Ports information" in the connection menu, below the Connect button.
-{{< img alt="Connect page" src="connect-page.png" width="600px" >}}
+{{< img-resize "images/VR/connect-page.png" 600x "Connect page">}}
 Find there the info of all the gRPC ports used. You can also modify them if you made changes on your robot:
 {{< img alt="Check ports information" src="port-info.png" width="600px" >}}
+{{< img-resize "images/VR/mirror-ready.png" 600x "Start teleoperation">}}
 {{% /expand %}}
 
 {{% expand "> Check robot status"%}}
 Open the info menu in the mirror room:
-{{< img alt="Info menu" src="mirror-info.png" width="600px" >}}
+{{< img-resize "images/VR/mirror-info.png" 600x "Info menu">}}
 The connection and services status, and motor temperature are reported here.
 {{% /expand %}}
 
 {{% expand "> Controller mapping"%}}
 Open the help menu in the mirror room:
-{{< img alt="Info menu" src="mirror-help.png" width="600px" >}}
+{{< img-resize "images/VR/mirror-help.png" 600x "Info menu">}}
 The mapping of the controller buttons to the robot actions are displayed here.
 {{% /expand %}}
 
 {{% expand "> Settings menu"%}}
 Open the settings menu in the mirror room:
-{{< img alt="Settings menu" src="mirror-settings.png" width="600px" >}}
+{{< img-resize "images/VR/mirror-settings.png" 600x "Settings menu">}}
 Here you can set your size to improve the mapping between your movements and reachy's motion. Individual parts of the robot can be deactivated in the case you don't need the mobile base, a specific arm, etc. The 3D mode can be activated here. Note that you'll need a recent (1.2+) version of Reachy for that. Finally the grasping lock mode can be turn on/off here as it can be in the online menu.
 {{% /expand %}}
 
 {{% expand "> Online menu"%}}
 Press (X) when controlling a (virtual) Reachy to open the online menu. Use the right joystick to select and icon and release (X).
-{{< img alt="Online menu" src="online-menu.png" width="600px" >}}
+{{< img-resize "images/VR/online-menu.png" 600x "Online menu">}}
 Emotion (movement of antennas) are triggered here. The grasping lock can be also activated from this menu.
 {{% /expand %}}
 
 
 {{% expand "> Exit and lock position"%}}
 While press (A) to exit the teleoperation, you may hold (X) to activate the position lock. A lock is displayed when doing so.
-{{< img alt="Exit and lock" src="exit-lock.png" width="600px" >}}
+{{< img-resize "images/VR/exit-lock.png" 600x "Exit and lock">}}
 The robot will stayed locked while you'll be back in the mirror room. This can be useful to keep a certain position while you need to take a break, change position or remove the headset. The position of the robot will be displayed by the semi-transparent green robot when you will restart the teleoperation.
 {{% /expand %}}
-
-{{< my-button link="/vr/use-teleop/old-start/" label="See legacy version" >}}

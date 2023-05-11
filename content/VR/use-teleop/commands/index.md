@@ -16,7 +16,7 @@ hidden: true
 
 ## Oculus Quest
 
-{{< img alt="Oculus Quest controller mapping" src="oculus-mapping.png" width="600px" >}}
+{{< img-resize "images/VR/oculus-mapping.png" 600x "Oculus Quest controller mapping">}}
 
 |Name|Feature description |
 |----|--------------------|
@@ -41,7 +41,7 @@ hidden: true
 
 ## Valve Index
 
-{{< img alt="Valve Index controller mapping" src="valve-mapping.png" width="600px" >}}
+{{< img-resize "images/VR/valve-mapping.png" 600x "Valve Index controller mapping">}}
 
 |Name|Feature description |
 |----|--------------------|
@@ -58,7 +58,3 @@ hidden: true
 |**Controller left position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
 |**Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
 |**Headset orientation**|**During teleoperation:** Reachy's head orientation|
-
-
-
-{{< my-button link="/vr/use-teleop/old-commands/" label="See legacy version" >}}
