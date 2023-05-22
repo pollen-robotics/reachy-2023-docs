@@ -15,7 +15,7 @@ toc: true
 
 This section assumes that you went through the [Hello World]({{< ref "sdk/getting-started/hello-world" >}}) so that you know how to connect to the robot.
 
-Reachy is equipped with fans to cooldown the joints when they are working. Each arm has three fans, two fans are in the head and one fan is placed below orbita (Reachy's neck).
+Reachy is equipped with fans to cooldown the joints when they are working. Each arm has three fans and two fans are in the head.
 
 First, connect to your Reachy.
 
@@ -80,4 +80,3 @@ reachy.fans.r_wrist_fan.is_on
 reachy.fans.r_wrist_fan.off()
 ```
 
-> IMPORTANT: Even though the *.on()* and *.off()* methods seem available for the *neck_fan*, using them will not work. The *neck_fan* will only been turned on automatically when its temperature reaches the activation threshold.
