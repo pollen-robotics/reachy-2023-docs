@@ -32,16 +32,23 @@ As explained above, Reachy's software runs on **ROS 2 Humble** so first of all, 
 Based on the [official ROS2 documentation](https://index.ros.org/doc/ros2/Installation/Humble/Linux-Install-Debians/), here are the steps to do the installation.
 In a terminal, in your computer:
 ```bash
-sudo apt update && sudo apt install curl -y
+sudo apt update && sudo apt install -y locales
+sudo locale-gen en_US en_US.UTF-8
+sudo update-locale LC_ALL=en_US.UTF-8 LANG=en_US.UTF-8
+export LANG=en_US.UTF-8
+
+sudo apt install -y software-properties-common
+sudo add-apt-repository universe
+sudo apt update && sudo apt install -y curl
 sudo curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key -o /usr/share/keyrings/ros-archive-keyring.gpg
-
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/ros-archive-keyring.gpg] http://packages.ros.org/ros2/ubuntu $(. /etc/os-release && echo $UBUNTU_CODENAME) main" | sudo tee /etc/apt/sources.list.d/ros2.list > /dev/null
-
 sudo apt update
-sudo apt upgrade
-
-sudo apt install ros-foxy-humble
-sudo apt install ros-dev-tools
+vcs import src < ros2_control.repos
+sudo apt install -y ros-humble-desktop
+sudo apt install -y ros-dev-tools
+sudo apt install -y ros-humble-tf-transformations
+sudo apt install -y ros-humble-compressed-image-transport
+sudo apt install -y python3-colcon-common-extensions
 ```
 ### Check that the installation went well
 To make sure that ROS2 Humble has been successfully installed, you can run the test example from ROS2 Humble. 
@@ -70,12 +77,22 @@ echo "source /opt/ros/humble/setup.bash" >> ~/.bashrc
 echo "source /home/reachy/reachy_ws/install/setup.bash" >> ~/.bashrc
 echo "source /usr/share/colcon_cd/function/colcon_cd.sh" >> ~/.bashrc
 echo "export _colcon_cd_root=~/ros2_install" >> ~/.bashrc
+echo 'export LC_NUMERIC="en_US.UTF-8"' >> ~/.bashrc
+echo "export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp" >> ~/.bashrc
+echo "export ROS_DOMAIN_ID=1" >> ~/.bashrc
 ```
 In the seconde line, replace the *reachy* in */home/reachy/reachy_ws/install/setup.bash* with your username.
 
 Finally, source your *.bashrc* file:
 ```bash
 source ~/.bashrc
+```
+
+### Install git lfs
+
+```bash
+sudo apt-get install -y git-lfs
+git lfs install
 ```
 
 ### Clone Reachy's ROS2 packages
@@ -143,11 +160,24 @@ pip3 install -e .
 ***To learn more on the repositories content and usage, please refer to README.md files in each repository.***
 
 ## Other
+## Install Rust
+RUST is needed to enable the communication between the hardware and the ROS packages.
+
+```bash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+echo "" >> ~/.bashrc
+echo "# RUST" >> ~/.bashrc
+echo 'source "$HOME/.cargo/env"' >> ~/.bashrc
+source ~/.bashrc
+```
+
 ### Open ports for serial use
 By default, on a Ubuntu install, when using serial, users do not have the right to access the ports. Give rights to open `/dev/ttyUSB` ports:
 ```bash
 sudo usermod -a -G tty <usr_name>
 sudo usermod -a -G dialout <usr_name>
+sudo usermod -a -G input <usr_name>
 ```
 ### Set the correct configuration file
 As Reachy software is meant to work with different robot configurations. Several configuration files are available.  
@@ -163,7 +193,7 @@ And add an config file with your model as *~/.reachy.yaml*.
 For example, to configure only a right arm:
 ```bash
 generation: 2023
-model: robotic_right_arm_kit
+model: right_arm
 zuuu_version: None
 neck_orbita_zero:
     top: 0.0
