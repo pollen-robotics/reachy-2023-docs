@@ -15,7 +15,7 @@ toc: true
 The wifi page of the dashboard lets you handle the network connection of the robot and typically looks like the following:
 
 <p align="center">
-  <img src="wifi_page.png" alt="Wifi page" width="100%"/>
+  <img src="wifi.png" alt="Wifi page" width="100%"/>
 </p>
 
 There are four main elements on this page:

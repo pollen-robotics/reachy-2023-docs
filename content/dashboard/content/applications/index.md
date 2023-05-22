@@ -21,7 +21,7 @@ Having this page is useful to control start some autonomous application for Reac
 In this page, one card will be created per Reachy's application. Typically the page will looks like the following:
 
 <p align="center">
-  <img src="services.png" alt="Services page" width="100%"/>
+  <img src="applications.png" alt="Applications page" width="100%"/>
 </p>
 
 For each application, it will be indicated whether the application is currently running or not and three buttons will be available:
