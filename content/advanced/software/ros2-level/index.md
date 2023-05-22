@@ -39,7 +39,7 @@ If you have a **Full kit** or a **Starter kit**, `reachy_sdk_server.service` is 
 
 If you have a **Reachy mobile**, `reachy_mobile_base.service` is enabled along with `reachy_sdk_server.service`. 
 
-See section [Using services]({{< ref "/advanced/services" >}}) for more information on the services). 
+See section [Using services]({{< ref "/advanced/services/available" >}}) for more information on the services. 
 
 You can check all ROS2 topics/services running on Reachy with:
 ```bash
@@ -57,19 +57,25 @@ If you want to learn more about what is run by each launch file, check the READM
 
 ## Bringup
 
-This launch file is the main entry point. It is reponsible for launching everything you need to use your Reachy. It can either connect to a real Reachy or simulate a fake one. You can run the sdk server or not, etc.
+The launch file [***reachy.launch.py***](https://github.com/pollen-robotics/reachy_2023/blob/master/reachy_bringup/launch/reachy.launch.py) is the main entry point. It is reponsible for launching everything you need to use your Reachy. It can either connect to a real Reachy or simulate a fake one. You can run the sdk server or not, etc.
 
 To connect to your robot and run everything needed to control it via ROS you can simply run:
 
-```ros2 launch reachy_bringup reachy.launch.py```
+```bash
+ros2 launch reachy_bringup reachy.launch.py
+```
 
-If you want to control it using the SDK:
+If you want to control it using the SDK (that is what is done by default by Reachy's main service [reachy_sdk_server.service]({{< ref "/advanced/services/available#reachy_sdk_serverservice" >}})):
 
-```ros2 launch reachy_bringup reachy.launch.py start_sdk_server:=true```
+```bash
+ros2 launch reachy_bringup reachy.launch.py start_sdk_server:=true
+```
 
 Similarly, if you want to control a fake Reachy using the SDK, you can run (we also launch RViz so you can see what's going on):
 
-```ros2 launch reachy_bringup fake:=true start_sdk_server:=true start_rviz:=true```
+```bash
+ros2 launch reachy_bringup fake:=true start_sdk_server:=true start_rviz:=true
+```
 
 Other options are available and can be seen below:
 
@@ -131,12 +137,12 @@ To launch the mobile base Hardware Abstraction Layer node:
 ```bash
 ros2 launch zuuu_hal hal.launch.py
 ```
-Many parameters on the mobile base like the maximum velocity can only be tuned at the ROS level. Check the [mobile base's HAL README](https://github.com/pollen-robotics/zuuu_hal) to learn about what you can do with the mobile base at the ROS level. 
+Many parameters on the mobile base like the maximum velocity can only be tuned at the ROS level. Check the [mobile base's HAL README](https://github.com/pollen-robotics/reachy_2023/tree/master/mobile_base_controller/zuuu_hal) to learn about what you can do with the mobile base at the ROS level. 
 
 ## SDK server nodes
 
 A layer above ROS, you can interact with **Reachy SDK API**. The Python SDK offers a gRPC (Remote Procedure Call) interface to communicate with the server.  
-To communicate with Reachy through the SDK, you need to launch server nodes that handle gRPC services. The easier way is to use the special flag `start_sdk_server:=true` in the bringup launch file. But if you want to run it independently:
+To communicate with Reachy through the SDK, you need to launch server nodes that handle gRPC services. The easiest way is to use the special flag `start_sdk_server:=true` in the bringup launch file. But if you want to run it independently:
 
 To launch the node for the **joints, fans and kinematics** gRPC services:
 ```bash
@@ -148,7 +154,7 @@ To launch the node for the **cameras view and zoom** gRPC services *(full/starte
 ros2 run reachy_sdk_server camera_server
 ```
 
-> Note: For the servers to work, the required ROS services must be already launched. The easier way is via the bringup launch file.
+> Note: For the servers to work, the required ROS services must be already launched. The easiest way is via the bringup launch file.
 
 
 To launch the node for the **mobile base** gRPC services *(mobile kit only)*:
