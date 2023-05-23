@@ -68,11 +68,13 @@ If situations like these happen, don't hesitate to use the motor's switch in Rea
 ### Check the temperatures
 
 Reachy's motors will heat when you are using its joints so you should manage the motors temperatures.
-The temperatures of each motor can be accessed using ReachySDK.
+The temperatures of each motor can be checked with the [dashboard]({{< ref "dashboard/content/dashboard" >}}) or be accessed using [Reachy's Python SDK]({{< ref "/sdk/first-moves/arm#temperature" >}}).
 
 There are two important temperature constants you need to know, their values depend on Reachy's part:
-* **fan trigger temperature**: temperature at which the motor will start to get hot and the matching fan should be turned on automatically. The fans allow to work longer with hot joints but enventually the temperature will keep rising if the joints keep being sollicitated. On Reachy's arms: 45°C, on Reachy's neck: 35°C.
-* **shutdown temperature**: when this temperature is reached, the motor will normally shutdown and stop working until it has cooled down. This is a precaution measure to protect the motor. On Reachy's arms: 55°C, on Reachy's neck: 50°C.
+* **fan trigger temperature**: temperature at which the motor will start to get hot and the matching fan should be turned on automatically. The fans allow to work longer with hot joints but enventually the temperature will keep rising if the joints keep being sollicitated. The default value is 45°C on Reachy.
+* **shutdown temperature**: when this temperature is reached, the motor will normally shutdown and stop working until it has cooled down. This is a precaution measure to protect the motor. The default value is 55°C on Reachy.
+
+Even though there exists a shutdown temperature, we recommand that when you intend on using the robot for a long period, you let the arms rest and their motors cool down regularly (5 minutes rest every 30 minutes of effort).
 
 
 ## Good practices

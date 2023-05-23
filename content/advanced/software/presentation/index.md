@@ -42,7 +42,7 @@ The main package is [**reachy_2023**](https://github.com/pollen-robotics/reachy_
 - [**reachy_msgs**](https://github.com/pollen-robotics/reachy_2023/tree/master/reachy_msgs): specific ROS messages for Reachy
 - [**reachy_bringup**](https://github.com/pollen-robotics/reachy_2023/tree/master/reachy_bringup): bringup launch file (can launch real, fake or gazebo reachy with or without RViz, etc.)
 
-- [**reachy_sdk_server**](https://github.com/pollen-robotics/reachy_2023/tree/develop/reachy_sdk_server): creates two gRPC servers, *camera_server* to get the camera's images and control the motorised zooms and *reachy_sdk_server* for the joints, load sensors, fans and Orbita.
+- [**reachy_sdk_server**](https://github.com/pollen-robotics/reachy_2023/tree/master/reachy_sdk_server): creates two gRPC servers, *camera_server* to get the camera's images and control the motorised zooms and *reachy_sdk_server* for the joints, load sensors, fans and Orbita.
 
 <p align="center">
   <img src="reachy-rviz.jpg" alt="drawing" width="90%"/>
@@ -51,12 +51,13 @@ The main package is [**reachy_2023**](https://github.com/pollen-robotics/reachy_
 ##### Mobile base
 The following package is only needed if you have a Reachy with mobile base:
 
-- [**mobile_base_controller**](https://github.com/pollen-robotics/reachy_2023/tree/develop/mobile_base_controller)
+- [**mobile_base_controller**](https://github.com/pollen-robotics/reachy_2023/tree/master/mobile_base_controller)
 
 with the following sub-packages:  
 
-- [**zuuu_hal**](https://github.com/pollen-robotics/reachy_2023/tree/develop/mobile_base_controller/zuuu_hal): HAL dedicated to the mobile base
-- [**zuuu_interfaces**](https://github.com/pollen-robotics/reachy_2023/tree/develop/mobile_base_controller/zuuu_interfaces): custom ROS services for the mobile base
+- [**zuuu_hal**](https://github.com/pollen-robotics/reachy_2023/tree/master/mobile_base_controller/zuuu_hal): HAL dedicated to the mobile base
+- [**zuuu_interfaces**](https://github.com/pollen-robotics/reachy_2023/tree/master/mobile_base_controller/zuuu_interfaces): custom ROS services for the mobile base
+- [**mobile_base_sdk_server**](https://github.com/pollen-robotics/reachy_2023/tree/master/mobile_base_controller/mobile_base_sdk_server): creates a gRPC server to control the mobile base
 
 :bulb: **Zuuu** is the internal name of the mobile base. It's a french onomatopoeia that evokes swift mouvements :) 
 
@@ -100,5 +101,5 @@ gRPC clients can be in different programming languages. Currently, you can remot
 The diagram below sums up what has been described in this page.
 
 <p align="center">
-<img src="software-archi.jpg" alt="drawing" width="90%"/>
+<img src="software-archi.png" alt="drawing" width="90%"/>
 </p>

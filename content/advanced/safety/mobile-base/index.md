@@ -55,4 +55,4 @@ However, the battery can hold a large amount of energy (832 Wh) and should alway
 
 ## Dynamic capabilities
 The wheel motors are **very** potent. In their default configuration, they are used at 20% of their maximum capabilities.
-You can, at your own risk, modify this limit in the [configuration of the HAL](https://github.com/pollen-robotics/zuuu_hal).
+You can, at your own risk, modify this limit in the [configuration of the HAL](https://github.com/pollen-robotics/reachy_2023/blob/master/mobile_base_controller/zuuu_hal/config/params.yaml).

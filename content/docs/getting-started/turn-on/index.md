@@ -32,8 +32,6 @@ You have two buttons behind the robot:
 
 ## Arm kit
 
-TODO: update 
-
 Plug the power supply on your arm on element (1):
 
 <p align="center">
@@ -42,7 +40,8 @@ Plug the power supply on your arm on element (1):
 
 The led should turn red.  
 
-Connect directly the gate of your arm (3) to your computer using a USB cable:
-|||
-|---|---|
-|{{< img alt="Reachy's base fixation" src="connect-1.jpg" width="50%" >}}|{{< img alt="Reachy's base fixation" src="connect-2.jpg" width="50%" >}}|
+Connect directly the the [USB2AX board](https://www.seeedstudio.com/USB2AX-p-1349.html) to your computer and you should be good to go! The USB2AX board should be connected with a three wires Dynamixel cable to the power supply board as well.
+
+<p align="center">
+<img src="arm_kit_usb2ax.jpg" alt="drawing" width="40%"/>
+</p>

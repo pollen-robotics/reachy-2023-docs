@@ -18,8 +18,9 @@ This file is read when [Reachy's main services]({{< ref "/advanced/services/avai
 
 The configuration file has multiple entries:
 - **model**: model of your Reachy (if it is a full kit, a starter kit, ...). When [reachy_sdk_server.service]({{< ref "/advanced/services/available#reachy_sdk_serverservice" >}}) starts, it will look at this entry to choose what code it has to run depending on the model of the robot.
-- **zuuu_model**: is at None if no mobile base is attached with the robot, else the mobile base version is indicated (current mobile base version is 1.0). When [reachy_mobile_base.service]({{< ref "/advanced/services/available#reachy_mobile_baseservice" >}}) starts, if *zuuu_model* is not None, the mobile base code is launched.
+- **zuuu_model**: is at None if no mobile base is attached with the robot, else the mobile base version is indicated (current mobile base version is 1.2). When [reachy_mobile_base.service]({{< ref "/advanced/services/available#reachy_mobile_baseservice" >}}) starts, if *zuuu_model* is not None, the mobile base code is launched.
 - **neck_zero_hardware**: hardware position of the three disks. You should not need to change those values unless you changed Orbita.
+- **fan_trigger_temperature**: temperature used to determine whether or not Reachy's fans need to be turned on to cool the motors off. The default value is 45°C.
 
 
 Typically, *~/.reachy.yaml* looks like this:
@@ -32,6 +33,7 @@ neck_orbita_zero:
     top: 0.0
     middle: 0.0
     bottom: 0.0
+fan_trigger_temperature: 45
 camera_parameters:
     left:
         fx: 0.0
