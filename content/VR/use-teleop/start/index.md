@@ -23,7 +23,7 @@ toc: true
 
 2. Select the robot you want to teleoperate (or create a new one), and click on "Connect".
 
-3. Get familiar with the controls in the mirror room and the virtual robot. You may configure various settings here. When you are raedy press "Ready", and hold (A).
+3. Get familiar with the controls in the mirror room and the virtual robot. You may configure various settings here. When you are ready press "Ready", and hold (A).
 
 4. **Look straight ahead, with your body in the same orientation as your head while pressing A** to start the teleoperation. *The initial head position is used to determine the coordinate system giving your VR controllers position.* 
 
@@ -66,11 +66,11 @@ The motors are automatically turned into compliant mode when quitting the mirror
 
 {{< img-resize "images/VR/mirror.png" 600x "Mirror scene">}}
 
-8. When you are ready, click on "Ready". The position of the actual robot appears in a semi-transparent green color. This may be useful when you've left the robot in a certain position that you would like to keep when entering the teleoperation. Hold (A) to start the teleoperation.
+8. When you are ready, **face the mirror completely** and click on "Ready". The position of the actual robot appears in a semi-transparent green color. This may be useful when you've left the robot in a certain position that you would like to keep when entering the teleoperation. Hold (A) to start the teleoperation.
 
 {{< img-resize "images/VR/mirror-ready.png" 600x "Start teleoperation">}}
 
-9. A 3 seconds timer appears while you enter the teleoperation. **Look straight ahead, with your body in the same orientation as your head.** The initial head position is used to determine the coordinate system giving your VR controllers position.  
+9. A 3 seconds timer appears while you enter the teleoperation. The motors speeds are reduced during this time to avoid sudden movements of the robot. Full speed is reached at the end of this countdown.
 
 {{< img-resize "images/VR/timer-start.png" 600x "Validate position before starting">}}
 
@@ -132,6 +132,12 @@ The mapping of the controller buttons to the robot actions are displayed here.
 Open the settings menu in the mirror room:
 {{< img-resize "images/VR/mirror-settings.png" 600x "Settings menu">}}
 Here you can set your size to improve the mapping between your movements and reachy's motion. Individual parts of the robot can be deactivated in the case you don't need the mobile base, a specific arm, etc. The 3D mode can be activated here. Note that you'll need a recent (1.2+) version of Reachy for that. Finally the grasping lock mode can be turn on/off here as it can be in the online menu.
+{{% /expand %}}
+
+{{% expand "> Reset position"%}}
+In the mirror scene, your body should be aligned with Reachy's body. This is mandatory to have a consistent control. If this is not the case after having pressed "Ready", face the mirror and click on "Reset position".
+{{< img-resize "images/VR/mirror-ready.png" 600x "Reset position">}}
+The "Reset position" button is placed at the bottom of the mirror, under the A loader.
 {{% /expand %}}
 
 {{% expand "> Online menu"%}}
