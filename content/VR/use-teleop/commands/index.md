@@ -24,15 +24,15 @@ hidden: true
 |       |**During teleoperation:** Return to menu|
 |**(B)**|**During teleoperation:** Boost mobile base|
 |**(X)**|**During teleoperation:** Open emotion menu (keep pressed)|
-|**Joystick left**|**During teleoperation:** Control mobile base translation|
-|**Joystick right**|**During teleoperation:** Control mobile base rotation|
+|**Left Joystick**|**During teleoperation:** Control mobile base translation|
+|**Right Joystick**|**During teleoperation:** Control mobile base rotation|
 |                  |*If emotion menu is open:* Select emotion|
-|**Index Trigger left**|**In menu:** Select button|
+|**Left Index Trigger**|**In menu:** Select button|
 |                      |**During teleoperation:** Control left gripper|
-|**Index Trigger right**|**In menu:** Select button|
+|**Right Index Trigger**|**In menu:** Select button|
 |                       |**During teleoperation:** Control right gripper|
-|**Controller left position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
-|**Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
+|**Left Controller position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
+|**Right Controller position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
 |**Headset orientation**|**During teleoperation:** Reachy's head orientation|
 
 
@@ -46,15 +46,15 @@ hidden: true
 |                |**During teleoperation:** Return to menu|
 |**(A)** ***left***|**During teleoperation:** Open emotion menu|
 |**(B)**|**During teleoperation:** Boost mobile base|
-|**Joystick left**|**During teleoperation:** Control mobile base translation|
-|**Joystick right**|**During teleoperation:** Control mobile base rotation|
+|**Left Joystick**|**During teleoperation:** Control mobile base translation|
+|**Right Joystick**|**During teleoperation:** Control mobile base rotation|
 |                  |*If emotion menu is open:* Select emotion|
-|**Index Trigger left**|**In menu:** Select button|
+|**Left Index Trigger**|**In menu:** Select button|
 |                      |**During teleoperation:** Control left gripper|
-|**Index Trigger right**|**In menu:** Select button|
+|**Right Index Trigger**|**In menu:** Select button|
 |                       |**During teleoperation:** Control right gripper|
-|**Controller left position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
-|**Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
+|**Left Controller position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
+|**Right Controller position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
 |**Headset orientation**|**During teleoperation:** Reachy's head orientation|
 
 
@@ -67,13 +67,13 @@ hidden: true
 |**Sandwich menu** ***right***|**At robot teleoperation start:** Start robot teleoperation|
 |                |**During teleoperation:** Return to menu|
 |**Sandwich menu** ***left***|**During teleoperation:** Open emotion menu|
-|**Joystick left**|**During teleoperation:** Control mobile base translation|
-|**Joystick right**|**During teleoperation:** Control mobile base rotation|
+|**Left Joystick**|**During teleoperation:** Control mobile base translation|
+|**Right Joystick**|**During teleoperation:** Control mobile base rotation|
 |                  |*If emotion menu is open:* Select emotion|
-|**Index Trigger left**|**In menu:** Select button|
+|**Left Index Trigger left**|**In menu:** Select button|
 |                      |**During teleoperation:** Control left gripper|
-|**Index Trigger right**|**In menu:** Select button|
+|**Right Index Trigger**|**In menu:** Select button|
 |                       |**During teleoperation:** Control right gripper|
-|**Controller left position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
-|**Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
+|**Left Controller position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
+|**Right Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
 |**Headset orientation**|**During teleoperation:** Reachy's head orientation|
