@@ -1,7 +1,7 @@
 ---
 title: "Controllers inputs"
 description: ""
-lead: "Mappings between the VR controllers and the app"
+lead: "Mapping between the most common VR controllers and the app"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -22,10 +22,11 @@ hidden: true
 |----|--------------------|
 |**(A)**|**At robot teleoperation start:** Start robot teleoperation|
 |       |**During teleoperation:** Return to menu|
-|**(B)**|**During teleoperation:** Boost mobile base|
+|**(B)**|**During teleoperation:** Mobile base boost|
 |**(X)**|**During teleoperation:** Open emotion menu (keep pressed)|
-|**Left Joystick**|**During teleoperation:** Control mobile base translation|
-|**Right Joystick**|**During teleoperation:** Control mobile base rotation|
+|       |**When leaving teleoperation (A pressed):** Lock robot position|
+|**Left Thumbstick**|**During teleoperation:** Control mobile base translation|
+|**Right Thumbstick**|**During teleoperation:** Control mobile base rotation|
 |                  |*If emotion menu is open:* Select emotion|
 |**Left Index Trigger**|**In menu:** Select button|
 |                      |**During teleoperation:** Control left gripper|
@@ -45,9 +46,10 @@ hidden: true
 |**(A)** ***right***|**At robot teleoperation start:** Start robot teleoperation|
 |                |**During teleoperation:** Return to menu|
 |**(A)** ***left***|**During teleoperation:** Open emotion menu|
-|**(B)**|**During teleoperation:** Boost mobile base|
-|**Left Joystick**|**During teleoperation:** Control mobile base translation|
-|**Right Joystick**|**During teleoperation:** Control mobile base rotation|
+|                  |**When leaving teleoperation (right A pressed):** Lock robot position|
+|**(B)** ***right***|**During teleoperation:** Mobile base boost|
+|**Left Thumbstick**|**During teleoperation:** Control mobile base translation|
+|**Right Thumbstick**|**During teleoperation:** Control mobile base rotation|
 |                  |*If emotion menu is open:* Select emotion|
 |**Left Index Trigger**|**In menu:** Select button|
 |                      |**During teleoperation:** Control left gripper|
@@ -67,10 +69,12 @@ hidden: true
 |**Sandwich menu** ***right***|**At robot teleoperation start:** Start robot teleoperation|
 |                |**During teleoperation:** Return to menu|
 |**Sandwich menu** ***left***|**During teleoperation:** Open emotion menu|
-|**Left Joystick**|**During teleoperation:** Control mobile base translation|
-|**Right Joystick**|**During teleoperation:** Control mobile base rotation|
+|                            |**When leaving teleoperation (right menu pressed):** Lock robot position|
+|**Left Trackpad**|**During teleoperation:** Control mobile base translation|
+|**Right Trackpad**|**During teleoperation:** Control mobile base rotation|
+|                  |*Center click:* Mobile base boost|
 |                  |*If emotion menu is open:* Select emotion|
-|**Left Index Trigger left**|**In menu:** Select button|
+|**Left Index Trigger**|**In menu:** Select button|
 |                      |**During teleoperation:** Control left gripper|
 |**Right Index Trigger**|**In menu:** Select button|
 |                       |**During teleoperation:** Control right gripper|
