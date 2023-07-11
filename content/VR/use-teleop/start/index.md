@@ -140,10 +140,19 @@ In the mirror scene, your body should be aligned with Reachy's body. This is man
 The "Reset position" button is placed at the bottom of the mirror, under the A loader.
 {{% /expand %}}
 
-{{% expand "> Online menu"%}}
-Press (X) when controlling a (virtual) Reachy to open the online menu. Use the right joystick to select and icon and release (X).
+{{% expand "> Emotion menu"%}}
+Press (X) (on Oculus Quest 2, [check here the input corresponding to your device](https://docs.pollen-robotics.com/vr/use-teleop/commands/) ) when controlling Reachy to open the emotion menu. Use the right joystick to select and icon and release (X).
 {{< img-resize "images/VR/online-menu.png" 600x "Online menu">}}
 Emotion (movement of antennas) are triggered here. The grasping lock can be also activated from this menu.
+{{% /expand %}}
+
+{{% expand "> Mobile base movements"%}}
+Use the **thumbstick/trackpad** to control the mobile base!  
+The left controller controls the translation of the mobile base, while the right one controls the rotation.  
+The forward direction is aligned with the **forward direction of the mobile base**, meaning that giving a forward instruction to the robot will always lead the robot to go physically forward, no matter the direction you are looking to.  
+{{< img-resize "images/VR/online-menu.png" 600x "Online menu">}}
+
+Check the actual direction of your commands using the **indicator** at the bottom: the straight arrow shows you the direction command relative to your actual head orientation. If your head is correctly aligned with the mobile base forward direction, this arrow will point forward if giving a forward command with your left controller.
 {{% /expand %}}
 
 {{% expand "> Exit and lock position"%}}
