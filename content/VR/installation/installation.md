@@ -17,7 +17,9 @@ toc: true
 
 ## On the Oculus Quest 2
 
-There are two possibles options for this device. If you are using the Oculus Link, please refer to the *On Windows computer* section.
+There are two options for this device: use it **natively on the headset** or run it on your computer using an **Oculus link**.  
+To use it natively, choose one of the following options to install it.  
+If you want to use the Oculus Link, please refer to the *On Windows computer* section.
 
 ### From the Quest Store
 
