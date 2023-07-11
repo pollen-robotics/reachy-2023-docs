@@ -9,7 +9,7 @@ images: []
 menu:
   VR:
     parent: "compatibility"
-weight: 620
+weight: 610
 toc: true
 ---
 
