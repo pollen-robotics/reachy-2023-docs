@@ -27,7 +27,7 @@ toc: true
 
 4. **Look straight ahead, with your body in the same orientation as your head while pressing A** to start the teleoperation. *The initial head position is used to determine the coordinate system giving your VR controllers position.* 
 
-{{< alert icon="👉" text="<b>Warning:</b> you <b>don't want to move your body</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
+{{< alert icon="👉" text="<b>Warning:</b> you <b>must not move your body</b> anymore after this step. The position of your VR controllers to master the robot arms are calculated depending on the position you had while pressing A." >}}
 
 {{< warning icon="🚨" text="<b>Important:</b> even if Reachy is bio-inspired, it cannot reproduce exactly all your movements. There are <b>positions that cannot be reached</b> by the robot. Please <b>avoid unusual movements</b> and do not persist in trying to reach a position if you see that the robot is stuck before it." >}}
 
@@ -136,7 +136,7 @@ Here you can set your size to improve the mapping between your movements and rea
 
 {{% expand "> Reset position"%}}
 In the mirror scene, your body should be aligned with Reachy's body. This is mandatory to have a consistent control. If this is not the case after having pressed "Ready", face the mirror and click on "Reset position".
-{{< img-resize "images/VR/mirror-ready.png" 600x "Reset position">}}
+{{< img-resize "images/VR/reset_position.png" 600x "Reset position">}}
 The "Reset position" button is placed at the bottom of the mirror, under the A loader.
 {{% /expand %}}
 
@@ -149,10 +149,18 @@ Emotion (movement of antennas) are triggered here. The grasping lock can be also
 {{% expand "> Mobile base movements"%}}
 Use the **thumbstick/trackpad** to control the mobile base!  
 The left controller controls the translation of the mobile base, while the right one controls the rotation.  
-The forward direction is aligned with the **forward direction of the mobile base**, meaning that giving a forward instruction to the robot will always lead the robot to go physically forward, no matter the direction you are looking to.  
-{{< img-resize "images/VR/online-menu.png" 600x "Online menu">}}
+The forward direction is aligned with the **forward direction of the mobile base**, meaning that giving a forward instruction to the robot will always lead the robot to go physically forward, no matter the direction you are looking to.   
 
-Check the actual direction of your commands using the **indicator** at the bottom: the straight arrow shows you the direction command relative to your actual head orientation. If your head is correctly aligned with the mobile base forward direction, this arrow will point forward if giving a forward command with your left controller.
+Check the actual direction of your commands using the **indicator** at the bottom: the straight arrow shows you the direction command relative to your actual head orientation. If your head is correctly aligned with the mobile base forward direction, this arrow will point forward if giving a forward command with your left controller.  
+{{< img-resize "images/VR/straight_forward.png" 600x "Online menu">}}
+{{< img-resize "images/VR/head_on_side_forward.png" 600x "Online menu">}}   
+
+In the above images, the same forward command is sent from the left controller.   
+On the first image, the user is looking straight (the black arrow is located in the target view), so the white mobility arrow is pointing front.   
+On the second image, the user is looking on the left side (the target view is on the left of the black arrow), so the forward direction is pointing right, as it is the direction aligned with the mobile base forward direction.   
+
+*Note that these images are only for example, mobility is not available on virtual Reachy.*
+
 {{% /expand %}}
 
 {{% expand "> Exit and lock position"%}}
