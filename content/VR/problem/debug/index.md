@@ -57,7 +57,13 @@ Your head was probably not correctly aligned with your body when you fixed your 
 Come back to the mirror and validate your choices again to be able to fix a new position.  
 
 **Reachy movements are jerky**  
-The connection is not fast enough between the robot and your computer, or another program may be alterating the reactivity.  
+The **connection is not fast enough** between the robot and your computer, or another program may be alterating the reactivity.  
+A warning message may also be displayed during teleoperation indicated the network is either unstable or has low speed.
+
+**The movements of the robot seem not correlated anymore with mine**  
+If a motor is overheating, it may have **stopped working**, which can lead in movements looking very different than yours. In reality, the arm is still trying to move according to yours, but the unmoving joints make the configuration of the arm hard to understand.  
+In most of the cases, an **error message** should be displayed in the teleoperation, telling that at least 1 motor is in critical error.  
+Nevertheless it may happen that no error message is displayed, if the motor stopped working before having time to send the information to the teleoperation app: in that case, you received a warning message telling at least 1 motor was heating up previously during teleoperation. Check the **temperature of the motors** in the **Info panel** of the transition room.
 
 ## The mobile base doesn't move
 Several elements can make the mobile base unreactive to your inputs.  
