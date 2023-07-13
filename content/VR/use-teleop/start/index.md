@@ -51,7 +51,7 @@ The motors are automatically turned into compliant mode when quitting the mirror
 
 3. Launch the application *TeleoperateReachy.exe* file if you are using a VR device connected to a Windows computer. For Oculus Quest users, start the app from within the headset if you have installed the *.apk*.
 
-4. Equip yourself with your headset, make sure you can see both controllers and that the scene is moving correctly in accordance with your head movements.
+4. Equip yourself with your headset, make sure you can see both controllers and that the scene around you is moving correctly in accordance with your head movements.
 
 5. Choose the robot you want to connect to: you can select a robot with its IP address, or add a new one to the list of available robots.
 
@@ -113,6 +113,8 @@ Emotion (movement of antennas) are triggered here. The grasping lock can be also
 
 ## Application features
 
+### Connection page
+
 {{% expand "> Add a new robot" %}}
 Click on the robot to select to open the panel of all saved robots:
 {{< img-resize "images/VR/choose-robot.png" 600x "Change robot to connect">}}
@@ -148,6 +150,8 @@ Find there the info of all the gRPC ports used. You can also modify them if you 
 {{< img-resize "images/VR/port-info.png" 600x "Check ports information">}}
 {{% /expand %}}
 
+### Mirror scene
+
 {{% expand "> Check robot status"%}}
 Open the info menu in the mirror room:
 {{< img-resize "images/VR/mirror-info.png" 600x "Info menu">}}
@@ -163,14 +167,17 @@ The mapping of the controller buttons to the robot actions are displayed here.
 {{% expand "> Settings menu"%}}
 Open the settings menu in the mirror room:
 {{< img-resize "images/VR/mirror-settings.png" 600x "Settings menu">}}
-Here you can set your size to improve the mapping between your movements and reachy's motion. Individual parts of the robot can be deactivated in the case you don't need the mobile base, a specific arm, etc. The 3D mode can be activated here. Note that you'll need a recent (1.2+) version of Reachy for that. Finally the grasping lock mode can be turn on/off here as it can be in the online menu.
+Here you can set your size to improve the mapping between your movements and reachy's motion. Individual parts of the robot can be deactivated in the case you don't need the mobile base, a specific arm, etc.  
+You can also modify the grasping mode there: with full control you decide at each time the opening of the gripper, while the grasping lock option enables you to close the gripper with on trigger press and open it with another one. Grasping lock option can be turned on/off as well in the emotion menu.
 {{% /expand %}}
 
 {{% expand "> Reset position"%}}
-In the mirror scene, your body should be aligned with Reachy's body. This is mandatory to have a consistent control. If this is not the case after having pressed "Ready", face the mirror and click on "Reset position".
+While facing the mirror, your body should be aligned with Reachy's body. This is mandatory to have a consistent control. If this is not the case after having pressed "Ready", face the mirror and click on "Reset position".
 {{< img-resize "images/VR/reset_position.png" 600x "Reset position">}}
 The "Reset position" button is placed at the bottom of the mirror, under the A loader.
 {{% /expand %}}
+
+### Teleoperation exit
 
 {{% expand "> Exit and lock position"%}}
 While press (A) to exit the teleoperation, you may hold (X) to activate the position lock. A lock is displayed when doing so.
