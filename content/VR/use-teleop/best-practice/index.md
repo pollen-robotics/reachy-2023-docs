@@ -1,6 +1,7 @@
 ---
 title: "🚨 Best practice"
-description: "Towards a good usage of the VR teleoperation app"
+description: ""
+lead: "Towards a good usage of the VR teleoperation app"
 date: 2021-03-30T13:05:22+02:00
 lastmod: 2021-03-30T13:05:22+02:00
 draft: false
@@ -8,7 +9,7 @@ images: []
 menu:
   VR:
     parent: "use-teleop"
-weight: 600
+weight: 632
 toc: true
 ---
 
