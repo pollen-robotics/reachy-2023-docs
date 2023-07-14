@@ -13,27 +13,25 @@ weight: 630
 toc: true
 ---
 
-## On the robot
+{{< alert icon="👉" text="Reachy 2021/2023 is already fully compatible with the teleoperation application. You have nothing to install on the robot." >}}
 
-(??){{< alert icon="⬇️" text="<a href=\"https://github.com/pollen-robotics/ReachyTeleoperation/releases\"> Download the latest version of the app</a>">}}
+{{< alert icon="⬇️" text="<a href=\"https://github.com/pollen-robotics/ReachyTeleoperation/releases\"> Download the latest version of the app</a>">}}
+
+## On the Oculus Quest 2
+
+There are two options for this device: use it **natively on the headset** or run it on your computer using an **Oculus link**. If you want to use the Oculus Link, please refer to the *On Windows computer* section.
+To use it natively, choose one of the following options to install it.  
+
+### From the Quest Store
+
+Contact us on our [discord channel](https://discord.com/channels/519098054377340948/991321051835404409) to be added to the list of the beta testers.
+
+### Using the apk
+
+[Download the apk from our github repo](https://github.com/pollen-robotics/ReachyTeleoperation/releases), and install it to your device with your favorite tool (with the [meta quest developer hub](https://developer.oculus.com/meta-quest-developer-hub/) for instance).
 
 ## On the Windows computer
 
-*Make sure your PC answers the [minimum requirements]({{< ref "pc-requirements" >}}).*
+Make sure that your VR device is properly installed and running (please refer to your device documentation).
 
-**SteamVR:**  
-You have to install SteamVR.
-To do so, install Steam on your computer if it isn’t already installed. It can be installed following this link: [https://store.steampowered.com/about/](https://store.steampowered.com/about/).  
-
-Then from Steam, install SteamVR.  
-
-**Teleoperation application:**  
-Install the teleoperation application.
-
-{{< alert icon="👉" text="Before trying to use the application, make sure your VR device is correctly detected by SteamVR." >}}
-
-<br></br>
-***For Oculus Quest users only:***  
-You need to install the Oculus application on your computer as well.  
-It has to be started before SteamVR.  
-Download it directly from the Oculus website at [https://www.oculus.com/setup/](https://www.oculus.com/setup/).
+[Download the zip archive from our github repo](https://github.com/pollen-robotics/ReachyTeleoperation/releases), and unzip it. Simply launch the *TeleopReachy.exe* file to start the application.
