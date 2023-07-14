@@ -15,11 +15,15 @@ toc: true
 
 {{< alert icon="👉" text="Reachy 2021/2023 is already fully compatible with the teleoperation application. You have nothing to install on the robot." >}}
 
+{{< alert icon="⬇️" text="<a href=\"https://github.com/pollen-robotics/ReachyTeleoperation/releases\"> Download the latest version of the app</a>">}}
+
+
+
+
 ## On the Oculus Quest 2
 
-There are two options for this device: use it **natively on the headset** or run it on your computer using an **Oculus link**.  
+There are two options for this device: use it **natively on the headset** or run it on your computer using an **Oculus link**. If you want to use the Oculus Link, please refer to the *On Windows computer* section.
 To use it natively, choose one of the following options to install it.  
-If you want to use the Oculus Link, please refer to the *On Windows computer* section.
 
 ### From the Quest Store
 
