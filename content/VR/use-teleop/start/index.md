@@ -17,6 +17,8 @@ toc: true
 
 ## In brief
 
+{{< alert icon="👉" text="The button names used below are for the Oculus Quest 2. Please refer to the Controllers Input page to get the corresponding names for your device." >}}
+
 ### Start teleoperating Reachy
 
 1. Make sure the robot is turned on, connected to the network and that all the robot's services are running before launching the teleoperation application.
@@ -109,6 +111,7 @@ On the second image, the user is looking on the left side (the target view is on
 ## Use Reachy's emotions
 Press (X) *(on Oculus Quest 2, [check here the input corresponding to your device](https://docs.pollen-robotics.com/vr/use-teleop/commands/))* when controlling Reachy to open the emotion menu. Use the right thumbstick/trackpad to select the desired emotion icon and release (X).
 {{< img-resize "images/VR/online-menu.png" 600x "Online menu">}}
+
 Emotion (movement of antennas) are triggered here. The grasping lock can be also activated from this menu.
 
 ## Application features
