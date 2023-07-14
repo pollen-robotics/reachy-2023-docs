@@ -13,14 +13,16 @@ weight: 300
 toc: true
 ---
 
+> Please note that the dashboard should be installed and its [main service enabled]({{< ref "/advanced/services/available#reachy_dashboardservice" >}}) by default on your Reachy.
+
 ## Clone the repository
 
-Clone the repository RAP-2021 from GitHub and use pip to install it. RAP stands for Reachy Access Point.
+Clone the repository reachy-dashboard from GitHub and use pip to install it.
 
 ```python
 cd ~/dev
-git clone https://github.com/pollen-robotics/RAP-2021.git
-cd RAP-2021
+git clone https://github.com/pollen-robotics/reachy-dashboard
+cd reachy-dashboard
 pip3 install -e .
 ```
 ## Check Reachy's services
@@ -30,8 +32,6 @@ To know if it is the case, in a terminal:
 ```bash
 systemctl --user list-unit-files | grep reachy
 ```
-
-If the result is empty, it means that Reachy's services are in sudo mode. To learn how to switch the services to user mode, follow the instructions on [this page]({{< ref "/help/system/change-services-user-mode" >}}).
 
 ## Create Reachy's Hotspot
 ```bash
@@ -44,9 +44,8 @@ Create a service file so that the dashboard will be started automatically at boo
 To create the service:
 
 ```bash
-cd ~/dev/RAP-2021
-rap generate-rap-service-file.bash
-mv reachy_rap.service ~/.config/systemd/user
-systemctl --user enable reachy_rap.service
-systemctl --user start reachy_rap.service
+cd ~/dev/reachy-dashboard
+bash setup_service.bash
+systemctl --user enable reachy_dashboard.service
+systemctl --user start reachy_dashboard.service
 ```

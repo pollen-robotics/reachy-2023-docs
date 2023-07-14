@@ -37,7 +37,9 @@ Then attach the robot to the metal support rod using the other metal fixation:
 | --------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------- |
 | {{< img alt="Reachy's back fixation onshape" src="reachy-back-fixation-onshape.png" width="50%" >}} | {{< img alt="Reachy's back fixation" src="reachy-back-fixation.jpg" width="50%" >}} |
 
-:point_right: A video showing how to install Reachy can be found [here](https://www.youtube.com/watch?v=5dqcilsQUjE). :point_left:
+A video showing how to install Reachy can be found below. 👇
+
+{{< youtube 5dqcilsQUjE >}}  
 
 &nbsp;
 

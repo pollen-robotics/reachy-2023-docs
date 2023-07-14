@@ -33,7 +33,7 @@ Sur Ubuntu 20.04
 sudo apt install npm
 ```
 
-## Cloner reachy-2021-docs et installer les dépendances
+## Cloner reachy-2023-docs et installer les dépendances
 
 ```bash
 git clone https://github.com/pollen-robotics/reachy-2023-docs.git

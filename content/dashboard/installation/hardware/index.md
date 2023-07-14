@@ -12,10 +12,11 @@ menu:
 weight: 310
 toc: true
 ---
-:bulb: **Note**: it is not mandatory to have the hardware, the dashboard will still work without it. This is just used to display the IP address of the robot on the network. It is useful when you want to connect to Reachy remotely without needing to plug a computer screen nor scanning the network to get its IP.
+
+> Please note that the LCD display screen should be installed in the back of the torso of your Reachy. You will need to take off Reachy's tee shirt to see it.
 
 <p align="center">
-  <img src="ipaddress_display.jpg" alt="Reachy's IP address display" width="30%"/>
+  <img src="ip_lcd_display_reachy.jpg" alt="Reachy's IP address display" width="40%"/>
 </p>
 
 ## Hardware
@@ -37,6 +38,3 @@ The [Arduino IDE](https://docs.arduino.cc/software/ide-v2) will be needed to fla
 * VCC pin of the LCD display goes with 5V pin of the Arduino
 * SCL pin of the LCD display goes with A5 pin of the Arduino
 * SDA pin of the LCD display goes with A4 pin of the Arduino
-
-## Install on Reachy
-TODO

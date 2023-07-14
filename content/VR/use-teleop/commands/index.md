@@ -1,7 +1,7 @@
 ---
 title: "Controllers inputs"
 description: ""
-lead: "Mapping between the most common VR controllers and the app"
+lead: "Mappings between the VR controllers and the app"
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -16,68 +16,68 @@ hidden: true
 
 ## Oculus Quest
 
-{{< img-resize "images/VR/oculus-quest-mapping.png" 600x "Oculus Quest controller mapping">}}
+{{< img alt="Oculus Quest controller mapping" src="oculus-mapping.png" width="600px" >}}
 
 |Name|Feature description |
 |----|--------------------|
-|**A**|**At robot teleoperation start:** Start robot teleoperation|
+|**(A)**|**At robot teleoperation start:** Validate position and start robot teleoperation|
 |       |**During teleoperation:** Return to menu|
-|**B**|**During teleoperation:** Mobile base boost|
-|**X**|**During teleoperation:** Open emotion menu (keep pressed) / Activate selected emotion (release)|
-|       |**When leaving teleoperation (A pressed):** Lock robot position|
-|**Left Thumbstick**|**During teleoperation:** Control mobile base translation|
-|**Right Thumbstick**|**During teleoperation:** Control mobile base rotation|
-|                  |*If emotion menu is open:* Select emotion|
-|**Left Index Trigger**|**In menu:** Select button|
+|**(B)**|**At robot teleoperation start:** Cancel and return to menu|
+|**(X)**|**At robot teleoperation start:** Validate position and start robot teleoperation|
+|       |**During teleoperation:** Return to menu|
+|**(Y)**|**At robot teleoperation start:** Cancel and return to menu|
+|       |**During teleoperation:** Show/Hide state panel (control of robot's temperature)|
+|**Joystick left**|**During teleoperation:** Control mobile base direction|
+|**Joystick right**|**During teleoperation:** Control antennas' emotion|
+|**Index Trigger left**|**In menu:** Select button|
 |                      |**During teleoperation:** Control left gripper|
-|**Right Index Trigger**|**In menu:** Select button|
+|**Index Trigger right**|**In menu:** Select button|
 |                       |**During teleoperation:** Control right gripper|
-|**Left Controller position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
-|**Right Controller position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
+|**Middle finger Trigger left**|**During teleoperation:** Use translation mode for mobility|
+|**Controller left position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
+|**Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
 |**Headset orientation**|**During teleoperation:** Reachy's head orientation|
 
 
 ## Valve Index
 
-{{< img-resize "images/VR/valve-index-mapping.png" 600x "Valve Index controller mapping">}}
+{{< img alt="Valve Index controller mapping" src="valve-mapping.png" width="600px" >}}
 
 |Name|Feature description |
 |----|--------------------|
-|**A** ***right***|**At robot teleoperation start:** Start robot teleoperation|
-|                |**During teleoperation:** Return to menu|
-|**A** ***left***|**During teleoperation:** Open emotion menu (keep pressed) / Activate selected emotion (release)|
-|                  |**When leaving teleoperation (right A pressed):** Lock robot position|
-|**B** ***right***|**During teleoperation:** Mobile base boost|
-|**Left Thumbstick**|**During teleoperation:** Control mobile base translation|
-|**Right Thumbstick**|**During teleoperation:** Control mobile base rotation|
-|                  |*If emotion menu is open:* Select emotion|
-|**Left Index Trigger**|**In menu:** Select button|
+|**(A)**|**At robot teleoperation start:** Validate position and start robot teleoperation|
+|       |**During teleoperation:** Return to menu|
+|**(B)**|**At robot teleoperation start:** Cancel and return to menu|
+|*left (B) only*|**During teleoperation:** Show/Hide state panel (control of robot's temperature)|
+|**Joystick left**|**During teleoperation:** Control mobile base direction|
+|**Joystick right**|**During teleoperation:** Control antennas' emotion|
+|**Index Trigger left**|**In menu:** Select button|
 |                      |**During teleoperation:** Control left gripper|
-|**Right Index Trigger**|**In menu:** Select button|
+|**Index Trigger right**|**In menu:** Select button|
 |                       |**During teleoperation:** Control right gripper|
-|**Left Controller position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
-|**Right Controller position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
-|**Headset orientation**|**During teleoperation:** Reachy's head orientation|
-
-
-## HTC Vive
-
-{{< img-resize "images/VR/htc-vive-mapping.png" 600x "Valve Index controller mapping">}}
-
-|Name|Feature description |
-|----|--------------------|
-|**Sandwich menu** ***right***|**At robot teleoperation start:** Start robot teleoperation|
-|                |**During teleoperation:** Return to menu|
-|**Sandwich menu** ***left***|**During teleoperation:** Open emotion menu (keep pressed) / Activate selected emotion (release)|
-|                            |**When leaving teleoperation (right menu pressed):** Lock robot position|
-|**Left Trackpad**|**During teleoperation:** Control mobile base translation|
-|**Right Trackpad**|**During teleoperation:** Control mobile base rotation|
-|                  |*Center click:* Mobile base boost|
-|                  |*If emotion menu is open:* Select emotion|
-|**Left Index Trigger**|**In menu:** Select button|
-|                      |**During teleoperation:** Control left gripper|
-|**Right Index Trigger**|**In menu:** Select button|
-|                       |**During teleoperation:** Control right gripper|
-|**Left Controller position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
-|**Right Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
-|**Headset orientation**|**During teleoperation:** Reachy's head orientation|
+(??)|**Left Controller position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
+(??)|**Right Controller position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
+(??)|**Headset orientation**|**During teleoperation:** Reachy's head orientation|
+(??)
+(??)
+(??)## HTC Vive
+(??)
+(??){{< img-resize "images/VR/htc-vive-mapping.png" 600x "Valve Index controller mapping">}}
+(??)
+(??)|Name|Feature description |
+(??)|----|--------------------|
+(??)|**Sandwich menu** ***right***|**At robot teleoperation start:** Start robot teleoperation|
+(??)|                |**During teleoperation:** Return to menu|
+(??)|**Sandwich menu** ***left***|**During teleoperation:** Open emotion menu (keep pressed) / Activate selected emotion (release)|
+(??)|                            |**When leaving teleoperation (right menu pressed):** Lock robot position|
+(??)|**Left Trackpad**|**During teleoperation:** Control mobile base translation|
+(??)|**Right Trackpad**|**During teleoperation:** Control mobile base rotation|
+(??)|                  |*Center click:* Mobile base boost|
+(??)|                  |*If emotion menu is open:* Select emotion|
+(??)|**Left Index Trigger**|**In menu:** Select button|
+(??)|                      |**During teleoperation:** Control left gripper|
+(??)|**Right Index Trigger**|**In menu:** Select button|
+(??)|                       |**During teleoperation:** Control right gripper|
+(??)|**Left Controller position / orientation**|**During teleoperation:** Reachy's left arm end effector position / orientation|
+(??)|**Right Controller right position / orientation**|**During teleoperation:** Reachy's right arm end effector position / orientation|
+(??)|**Headset orientation**|**During teleoperation:** Reachy's head orientation|

@@ -13,7 +13,7 @@ weight: 100
 toc: true
 ---
 
-Reachy Access Point (or RAP) is the name of the dashboard that we developed to give you an overview of the state of your Reachy (which motors are detected, what services are running, what are the motors temperatures...) as well as giving you the possiblity to access quickly some features (changing a robot's part compliance for example).
+We developed Reachy's dashboard to give you an overview of the state of your Reachy (which motors are detected, what services are running, what are the motors temperatures...) as well as giving you the possiblity to access quickly some features (changing a robot's part compliance for example).
 
 This tool has been thought to help you **start easier with the robot** and **facilitate quick debugging**.
 
@@ -44,11 +44,12 @@ Access the dashboard at `<robot-ip>:3972` from any web browser.
 
 ## Features Overview
 
-The dashboard is composed of four pages:
+The dashboard is composed of five pages:
 * [**Debug**]({{< ref "/dashboard/content/debug" >}}): indicates if a cable was disconnected or if Reachy's motors were off when Reachy booted,
 * [**Dashboard**]({{< ref "/dashboard/content/dashboard" >}}): displays the present position and temperature of each joint, allows you to control Reachy's fans and the joints compliance,
 * [**Services**]({{< ref "/dashboard/content/services" >}}): lets you check which services are running in your robot. You can restart, stop each service and access their logs easily,
-* [**Wifi**]({{< ref "/dashboard/content/wifi" >}}): lets you manage Reachy's wireless connection. You can connect your robot to a new wifi network or control its hotspot. 
+* [**Wifi**]({{< ref "/dashboard/content/wifi" >}}): lets you manage Reachy's wireless connection. You can connect your robot to a new wifi network or control its hotspot.
+* [**Applications**]({{< ref "/dashboard/content/applications" >}}): lets you manage Reachy's autonomous applications. Just with Reachy's services, you start, stop and access the logs for each application that you installed. For now, only the [Hello world]({{< ref "/sdk/application/hello-world" >}}) and [Face tracking]({{< ref "/sdk/application/face-tracking" >}}) applications are available.
 
 On each page, the configuration of the robot will also be displayed (e.g. whether your robot is a full kit, starter kit, ...)
 
