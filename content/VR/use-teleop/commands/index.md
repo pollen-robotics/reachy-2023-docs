@@ -20,10 +20,10 @@ hidden: true
 
 |Name|Feature description |
 |----|--------------------|
-|**(A)**|**At robot teleoperation start:** Start robot teleoperation|
+|**A**|**At robot teleoperation start:** Start robot teleoperation|
 |       |**During teleoperation:** Return to menu|
-|**(B)**|**During teleoperation:** Mobile base boost|
-|**(X)**|**During teleoperation:** Open emotion menu (keep pressed)|
+|**B**|**During teleoperation:** Mobile base boost|
+|**X**|**During teleoperation:** Open emotion menu (keep pressed) / Activate selected emotion (release)|
 |       |**When leaving teleoperation (A pressed):** Lock robot position|
 |**Left Thumbstick**|**During teleoperation:** Control mobile base translation|
 |**Right Thumbstick**|**During teleoperation:** Control mobile base rotation|
@@ -43,11 +43,11 @@ hidden: true
 
 |Name|Feature description |
 |----|--------------------|
-|**(A)** ***right***|**At robot teleoperation start:** Start robot teleoperation|
+|**A** ***right***|**At robot teleoperation start:** Start robot teleoperation|
 |                |**During teleoperation:** Return to menu|
-|**(A)** ***left***|**During teleoperation:** Open emotion menu|
+|**A** ***left***|**During teleoperation:** Open emotion menu (keep pressed) / Activate selected emotion (release)|
 |                  |**When leaving teleoperation (right A pressed):** Lock robot position|
-|**(B)** ***right***|**During teleoperation:** Mobile base boost|
+|**B** ***right***|**During teleoperation:** Mobile base boost|
 |**Left Thumbstick**|**During teleoperation:** Control mobile base translation|
 |**Right Thumbstick**|**During teleoperation:** Control mobile base rotation|
 |                  |*If emotion menu is open:* Select emotion|
@@ -68,7 +68,7 @@ hidden: true
 |----|--------------------|
 |**Sandwich menu** ***right***|**At robot teleoperation start:** Start robot teleoperation|
 |                |**During teleoperation:** Return to menu|
-|**Sandwich menu** ***left***|**During teleoperation:** Open emotion menu|
+|**Sandwich menu** ***left***|**During teleoperation:** Open emotion menu (keep pressed) / Activate selected emotion (release)|
 |                            |**When leaving teleoperation (right menu pressed):** Lock robot position|
 |**Left Trackpad**|**During teleoperation:** Control mobile base translation|
 |**Right Trackpad**|**During teleoperation:** Control mobile base rotation|
