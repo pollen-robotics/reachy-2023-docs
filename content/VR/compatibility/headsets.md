@@ -9,13 +9,14 @@ images: []
 menu:
   VR:
     parent: "compatibility"
-weight: 620
+weight: 610
 toc: true
 ---
 
-The VR teleoperation application is compatible with the following device:  
+The VR teleoperation application supports any device compatible with Unity 2020.3 including but not limited to the following devices:  
 * **Valve Index**
 * **HTC Vive**
 * **Oculus Rift**
+* **Oculus Quest 2** (native or Oculus Link)
 
-It is also compatible with **Oculus Quest 1 & 2** using an **Oculus Link** cable to connect it to your computer or **Virtual Desktop** application.
+Please refer to [Unity documentation](https://docs.unity3d.com/2020.3/Documentation/Manual/VROverview.html) for more information about the compatibility.
