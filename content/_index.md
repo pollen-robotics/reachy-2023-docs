@@ -15,7 +15,7 @@ images: ["reachy.png"]
 
 :warning: This documentation is for the version 2023 of Reachy. :warning:
 
-If you have an older version, you can find the documentation for older versions:
+If you have another version, you can find the documentation for other versions:
 
 <div class="dropdown">
   <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
