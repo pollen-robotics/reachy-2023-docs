@@ -13,7 +13,7 @@ weight: 642
 toc: true
 ---
 
-{{< warning icon="👉🏾" text="Before starting teleoperating Reachy, please make sure you read the  <b><a href=\"https://docs.pollen-robotics.com/vr/use-teleop/best-practice/\">Best Practice</a></b>" >}}
+{{< warning icon="👉🏾" text="Before starting teleoperating Reachy, please make sure you read the  <b><a href=\"https://pollen-robotics.github.io/reachy-2023-docs/vr/use-teleop/best-practice/\">Best Practice</a></b>" >}}
 
 ## In brief
 
@@ -87,7 +87,7 @@ The **left controller controls the translation** of the mobile base, while the *
 **Is there any security to prevent collision with objects?**  
 
 **Yes!** If you are too close to a wall or object, the LIDAR anti-collision safety unables the mobile base to go closer to the obstacle. The mobile base will therefore not move in this direction, but you can still go in other directions.  
-[More information on the anti-collision safety](https://docs.pollen-robotics.com/sdk/mobile-base/safety/)  
+[More information on the anti-collision safety](https://pollen-robotics.github.io/reachy-2023-docs/sdk/mobile-base/safety/)  
 
 Nevertheless, this security is for the mobile base and won't prevent the robot's arms to collide with external objects, so be aware while teleoperating the robot.  
 
@@ -109,7 +109,7 @@ On the second image, the user is looking on the left side (the target view is on
 
 
 ## Use Reachy's emotions
-Press (X) *(on Oculus Quest 2, [check here the input corresponding to your device](https://docs.pollen-robotics.com/vr/use-teleop/commands/))* when controlling Reachy to open the emotion menu. Use the right thumbstick/trackpad to select the desired emotion icon and release (X).
+Press (X) *(on Oculus Quest 2, [check here the input corresponding to your device](https://pollen-robotics.github.io/reachy-2023-docs/vr/use-teleop/commands/))* when controlling Reachy to open the emotion menu. Use the right thumbstick/trackpad to select the desired emotion icon and release (X).
 {{< img-resize "images/VR/online-menu.png" 600x "Online menu">}}
 
 Emotion (movement of antennas) are triggered here. The grasping lock can be also activated from this menu.
